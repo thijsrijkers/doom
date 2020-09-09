@@ -2,33 +2,70 @@
 <html>
     <head>
         <meta charset="utf-8">
-            <style>
+        <style>
                 #UI {
                     height: 15%;
-                    width: 100%;
-                    background-image: url('../assets/ui/STBAR.png');
-                    background-repeat: cover;
+                    width: 90%;
+                    margin: 0 auto;
                     background-size: 85%;
                     background-color: lightblue;
-                    position: absolute;
+                    position: fixed;
                     bottom: 0;
-                    left: 0;
+                    left: 5%;
+                }
+
+                #headPlayer {
+                    width:10%; 
+                    height:100%;
+                    margin-left: 38%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                #gun {
+                    width:25%; 
+                    height: 35%;
+                    margin: 0 auto;
+                    position: absolute; 
+                    bottom: 0;
+                    left: 35%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-position: bottom;
                 }
 
                 #canvas {
                     width:100%; 
                     height:85%;
                     position: absolute;
-                    background-color: black;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
                     top: 0;
                     left: 0;
                 }
-            </style>
-        <script src="hub.js"></script>   
-        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+                #canvasUI {
+                    width:100%; 
+                    height:15%;
+                    position: absolute;
+                    background-color: black;
+                    bottom: 0;
+                    left: 0;
+                }
+        </style>
     </head>
     <body>
-        <div id="UI"></div>
-        <div id="canvas"></div>
+        <div id="canvas" onclick='GunShot()'>
+            <div id="gun"></div>
+        </div>
+        <div id="canvasUI"></div>
+        <div id="UI">
+            <div id="headPlayer"></div>
+        </div>
+        <script src="engine/hub.js"></script> 
+        <script src="engine/manager.js"></script> 
+        <script src="engine/player.js"></script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     </body>
 </html> 
