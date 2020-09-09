@@ -1,4 +1,4 @@
-//Script for the players gun
+//Script that changes favorite type language of github
 //
 //
 //
@@ -101,7 +101,6 @@
 //
 //
 //
-////
 //
 //
 //
@@ -140,7 +139,6 @@
 //
 //
 //
-////
 //
 //
 //
@@ -180,4 +178,6 @@
 //
 //
 //
-// Lol why?!
+//
+//
+// 
