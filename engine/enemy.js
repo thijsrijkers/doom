@@ -1,7 +1,7 @@
 //Script for the enemy
 var enemy = false;
 var heightEnemy = 16;
-var widthEnemy = 8;
+var widthEnemy = 6;
 var enemyChangeFrameTime = 300;
 var enemyTopPosition = 53;
 document.getElementById("enemySpawn").visibility = 'hidden';    
@@ -40,18 +40,18 @@ function enemyWalkingForward()
     if(enemy == true)
     {
         enemyTopPosition += 0.5;
-        heightEnemy += 1;
+        heightEnemy += 2;
         widthEnemy += 0.5;
 
         $(document).ready(function() {
             $("#enemySpawn").css({
-            "top": enemyTopPosition +`%`,
+            //"top": enemyTopPosition +`%`,
             "width": widthEnemy +`%`,
             "height": heightEnemy +`%`
             });
         })
 
-        if(enemyTopPosition >= 70)
+        if(enemyTopPosition >= 85)
         {
             location.reload(); 
         }
