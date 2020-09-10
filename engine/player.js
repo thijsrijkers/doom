@@ -1,5 +1,5 @@
 //Script for player behaviour
-var timerSwitchFrameGun = 250;
+var timerSwitchFrameGun = 150;
 
 setTimeout(SetGun, 200);
 
