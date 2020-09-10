@@ -1,5 +1,5 @@
 <h1>Doom</h1>
-💣 JavaScript Version of Doom
+JavaScript Version of Doom
 <br><br>
 
 <h2> Setup</h2>
