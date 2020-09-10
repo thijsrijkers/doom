@@ -13,5 +13,3 @@
   <li>https://www.w3schools.com/html/</li>
   <li>https://www.w3schools.com/css/</li>
 </ul>
-<h2> Progres</h2>
-<img src ="https://i.gyazo.com/a58d652181616ff2afdbbe658db15764.png"> </img>
