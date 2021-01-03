@@ -1,5 +1,7 @@
-<h1>Doom</h1>
-JavaScript Version of Doom
+ <p align="center"><img src="https://i.imgur.com/VeY1tOw.png" width="110" height="200"> </p>
+ <p align="center"> Doom but made in Javascript</p>
+ <h2 align="center"> Doom </h2>
+  <p align="center"><img src="https://i.imgur.com/SqLBGdF.gif" width="540" height="250"> </p>
 <br><br>
 
 <h2> Setup</h2>
