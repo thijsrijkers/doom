@@ -34,6 +34,19 @@
  
 </tbody>
 </table>
+
+<h2> Supported Browsers</h2>
+ <p>We want to support multiple browser but atm were still developing the software. Because of this were supporting only three browsers atm. These are Google Chrome, Internet Explorer and Edge. We are making Doom JS specific with Javascript and because of this we can easly test this on Chrome and Internet Explorer. The reasoning were supporting Edge is only because Edge is Chromium based what supports the Javascript functionality that Chrome supports.</p>
+  <h3> Supported Languages</h3>
+  <ul>
+   <li>Google Chrome</li>
+   <li>Internet Explorer</li>
+   <li>Edge</li></ul>
+<h2> Tests</h2>
+<p>Thank you for contributing to Doom JS!
+
+Before creating a pull request with new development, please run the tests to ensure that everything is working great. It would also be a good idea to run the tests before starting development to distinguish problems between your environment and the Doom software. </p>
+
 <h2> Setup</h2>
 <ul>
   <li>Download project</li>
