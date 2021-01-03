@@ -1,7 +1,6 @@
- <p align="center"><img src="https://i.imgur.com/VeY1tOw.png" width="110" height="200"> </p>
+ <p align="center"><img src="https://imgur.com/9kK2ASm" width="440" height="200"> </p>
  <p align="center"> Doom but made in Javascript</p>
  <h2 align="center"> Doom </h2>
-  <p align="center"><img src="https://i.imgur.com/SqLBGdF.gif" width="540" height="350"> </p>
 <br><br>
 
 <h2> Setup</h2>
