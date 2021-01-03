@@ -1,5 +1,7 @@
 //Script for the enemy
 var enemy = false;
+var enemyPosition = 45;
+var enemyFixPosition = 45;
 var heightEnemy = 16;
 var widthEnemy = 6;
 var enemyChangeFrameTime = 300;
@@ -35,6 +37,78 @@ function AnimationEnemy()
     setTimeout(AnimationEnemy, enemyChangeFrameTime); 
 }
 
+function enemyWalkRight()
+{
+    if(enemy == true)
+    {
+        enemyPosition += 2;
+
+        if(enemyPosition <= 90 && heightEnemy <= 62)
+        {
+            $(document).ready(function() {
+                $("#enemySpawn").css({
+                //"top": enemyTopPosition +`%`,
+                "left": enemyPosition +`%`,
+                });
+            }) 
+        }
+        else
+        {
+            var x = document.getElementById("enemySpawn");
+            x.style.display = "none";
+        }
+    }
+}
+
+function enemyWalkHorizontal(value)
+{
+    if(enemy == true)
+    {
+        if(value == "A")
+        {
+            enemyPosition -= 2;
+
+            if(enemyPosition >= -10)
+            {
+                var x = document.getElementById("enemySpawn");
+                x.style.display = "block";
+                $(document).ready(function() {
+                    $("#enemySpawn").css({
+                    //"top": enemyTopPosition +`%`,
+                    "left": enemyPosition +`%`,
+                    });
+                }) 
+            }
+            else
+            {
+                var x = document.getElementById("enemySpawn");
+                x.style.display = "none";
+            }
+        }
+        else if(value == "D")
+        {     
+            enemyPosition += 2;
+
+            if(enemyPosition <= 90 && heightEnemy <= 62)
+            {
+                var x = document.getElementById("enemySpawn");
+                x.style.display = "block";
+                $(document).ready(function() {
+                    $("#enemySpawn").css({
+                    //"top": enemyTopPosition +`%`,
+                    "left": enemyPosition +`%`,
+                    });
+                }) 
+            }
+            else
+            {
+                var x = document.getElementById("enemySpawn");
+                x.style.display = "none";
+            }
+        }
+    }
+}
+
 function enemyWalkingForward()
 {
     if(enemy == true)
@@ -51,27 +125,45 @@ function enemyWalkingForward()
             });
         })
 
+        if(heightEnemy > 35 && enemyPosition > 70)
+        {
+            enemyPosition -= 2;
+        }
+
+
+        $(document).ready(function() {
+            $("#enemySpawn").css({
+            //"top": enemyTopPosition +`%`,
+            "left": enemyPosition +`%`,
+            });
+        }) 
+        
+
         if(enemyTopPosition >= 85)
         {
             location.reload(); 
         }
         else
         {
-            setTimeout(enemyWalkingForward, 1000); 
+            setTimeout(enemyWalkingForward, 1800); 
         }
     }
 }
 
 function KillEnemy()
 {
-    setTimeout(HideEnemy, 10); 
-    heightEnemy = 16;
-    widthEnemy = 8;
-    enemyTopPosition = 50;
-    enemy = false;
-    setTimeout(enemyTrue, 3400); 
-    setTimeout(ShowEnemy, 3400); 
-    setTimeout(enemyWalkingForward, 3500); 
+    
+    if(enemyPosition < 48 && enemyPosition > 37)
+    {
+        setTimeout(HideEnemy, 10); 
+        heightEnemy = 16;
+        widthEnemy = 8;
+        enemyTopPosition = 50;
+        enemy = false;
+        setTimeout(enemyTrue, 3400); 
+        setTimeout(ShowEnemy, 3400); 
+        setTimeout(enemyWalkingForward, 3500); 
+    }
 }
 
 function enemyTrue()

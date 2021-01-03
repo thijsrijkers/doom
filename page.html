@@ -5,10 +5,11 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div id="canvas" onclick='GunShot()'>
-            <div id="enemySpawn" onclick='KillEnemy()'></div>
-            <div id="gun"></div>
+        <div id="canvas" onclick='GunShot();  KillEnemy();'>
+            <div id="enemySpawn"></div>
         </div>
+        
+        <div id="gun"></div>
         <div id="canvasUI"></div>
         <div id="UI">
             <div id="headPlayer"></div>
@@ -16,8 +17,8 @@
         
         <script src="engine/hub.js"></script> 
         <script src="engine/manager.js"></script> 
-        <script src="engine/player.js"></script> 
         <script src="engine/enemy.js"></script> 
+        <script src="engine/player.js"></script> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     </body>
 </html> 

@@ -2,6 +2,15 @@
 setTimeout(SetStage, 200);
 setTimeout(SetBar, 200);
 
+window.onload = function() {
+  canvas = document.getElementById('canvas');
+
+  document.addEventListener('keydown', function(event) 
+  {
+      enemyWalkHorizontal(String.fromCharCode(event.which));
+  }, false);
+}
+
 function SetStage()
 {
     $(document).ready(function() {
