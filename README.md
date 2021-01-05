@@ -28,7 +28,7 @@
 <td>Walk to the right</td>
 </tr>
 <tr>
-<td>Left mouse button()</td>
+<td>Left mouse button</td>
 <td>Shoot your gun</td>
 </tr>
  
